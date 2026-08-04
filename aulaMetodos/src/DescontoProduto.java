@@ -19,6 +19,7 @@ public class DescontoProduto {
         System.out.println("Valor final: " + valorFinal);
         
         compraCalculada();
+    }
 
     public static double calculaDesconto(double desconto, double valor){
         return (valor * desconto) / 100;
@@ -31,5 +32,4 @@ public class DescontoProduto {
     public static void compraCalculada(){
         System.out.println("Compra calculada com sucesso!");
     }
-}
 }
