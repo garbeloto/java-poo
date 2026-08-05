@@ -4,7 +4,10 @@ public class mediaEscolar { //Exercício 01
     public static void main(String[] args) throws Exception {
 
         Scanner scan = new Scanner(System.in);
-        
+
+        System.out.println("Informe o nome do aluno: ");
+        String nome = scan.nextLine();
+
         System.out.println("Digite a primeira nota do aluno: ");
         double nota1 = scan.nextDouble();
 
@@ -15,6 +18,8 @@ public class mediaEscolar { //Exercício 01
         double nota3 = scan.nextDouble();
 
         double media = calculaMedia(nota1, nota2, nota3);
+
+        System.out.println("Nome do aluno: " + nome);
 
         System.out.println("Média do aluno: " + media);
         aprovacaoAluno(media);
@@ -28,7 +33,7 @@ public class mediaEscolar { //Exercício 01
     public static void aprovacaoAluno(double media){
         if (media < 0 || media > 10) {
             System.out.println("Média invalida!");
-        } else if (media >= 6) {
+        } else if (media >= 7) {
             System.out.println("Aluno aprovado!");
         } else if (media >= 5) {
             System.out.println("Aluno em recuperação!");
