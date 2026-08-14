@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CalculoImc {
+public class CalculoImc { //Exercício 6
     
     public static void main(String[] args) {
         
@@ -22,8 +22,14 @@ public class CalculoImc {
     public static void classificacaoImc (double imc){
         if (imc < 18.5) {
             System.out.println("Magreza (abaixo do peso)");
-        } else if (imc >= 18.5 && imc <= 24.9) {
+        } else if (imc >= 18.5 || imc <= 24.9) {
             System.out.println("Normal (peso saudável)");
+        } else if (imc >= 25 || imc <= 29.9 ) {
+            System.out.println("Sobrepeso (excesso de peso)");
+        } else if (imc >= 30 || imc <= 39.9) {
+            System.out.println("Obesidade (graus I e II)");
+        } else if (imc >= 40 ) {
+            System.out.println("Obesidade grave (grau III)");
         }
     }
 }

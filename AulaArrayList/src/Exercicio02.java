@@ -33,7 +33,7 @@ public class Exercicio02 {
         }
 
         System.out.println("Informe uma posição de 0" + " até " + (notas.size() -1) + " para remover uma nota: ");
-        double removerNota = scan.nextDouble();
+        int removerNota = scan.nextInt();
 
         notas.remove(removerNota);
 

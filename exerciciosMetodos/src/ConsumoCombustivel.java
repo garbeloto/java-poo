@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ConsumoCombustivel {
+public class ConsumoCombustivel { //Exercício 5
     
 public static void main(String[] args) throws Exception { //Exercício 05
     

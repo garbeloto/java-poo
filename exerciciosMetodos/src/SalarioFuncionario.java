@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SalarioFuncionario { //Exercício04
+public class SalarioFuncionario { //Exercício 04
     
     public static void main(String[] args) throws Exception {
         
