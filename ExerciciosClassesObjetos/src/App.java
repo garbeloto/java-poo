@@ -30,7 +30,7 @@ public class App {
 
         /* Musica musica = new Musica(); //Exercício 01
 
-        musica.titulo = "ruin the friend ship";
+        musica.titulo = "ruin the friendship";
         musica.artista = "Taylor Swift";
         musica.duracao = 3.02;
         musica.ano = 2025;
