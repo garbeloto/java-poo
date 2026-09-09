@@ -1,10 +1,23 @@
 public class App {
     public static void main(String[] args) throws Exception {
         //Exercício 4:
-        Jogador jogador1 = new Jogador("Angelina", "Meio Campista", 8, 25);
+        Jogador jogador1 = new Jogador("Angelina", "Meio-Campista", 8, 25);
         Jogador jogador2 = new Jogador("Kerolin", "Atacante");
 
+        System.out.println("Informações das jogadoras: ");
         jogador1.exibirInformacoesJogador();
+        jogador2.exibirInformacoesJogador();
+
+        jogador1.alterarNumeroJogador(9);
+        jogador1.alterarIdadeJogador(26);
+
+        jogador2.alterarNumeroJogador(10);
+        jogador2.alterarIdadeJogador(26);
+        
+        System.out.println("---------------------------");
+        System.out.println("Informações das jogadoras após alterações: ");
+        jogador1.exibirInformacoesJogador();
+        jogador2.exibirInformacoesJogador();
 
         
 
