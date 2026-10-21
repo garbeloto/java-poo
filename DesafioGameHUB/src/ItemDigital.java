@@ -1,11 +1,12 @@
-
 public class ItemDigital {
     private String nome;
-    private double valor; 
+    private double valor;
     private int estoque;
     private boolean disponivel;
     private boolean exclusivo;
     private boolean jaComprado;
+    private boolean isBloquado;
+
 
     public ItemDigital(String nome, double valor, int estoque, boolean disponivel, boolean exclusivo) {
         setNome(nome);
@@ -17,13 +18,16 @@ public class ItemDigital {
     }
 
 
+
+
     public boolean iSDisponivelParaVenda(){
         if (disponivel == true && estoque > 0 ) {
             return true;
-        } else { 
+        } else {
             return false;
         }
-    } 
+    }
+
 
     public void setNome(String nome) {
         if (nome == null) {
@@ -33,6 +37,7 @@ public class ItemDigital {
         }
     }
 
+
     public void setValor(double valor) {
         if (valor > 0) {
             this.valor = valor;
@@ -40,6 +45,7 @@ public class ItemDigital {
             System.out.println("Valor deve ser maior que zero.");
         }
     }
+
 
     public void setEstoque(int estoque) {
         if (estoque < 0) {
@@ -51,11 +57,13 @@ public class ItemDigital {
         }
     }
 
+
     public void setDisponivel(boolean disponivel) {
         if (estoque >= 0) {
             this.disponivel = disponivel;
         }
     }
+
 
     public void reduzirEstoque() {
         if (this.estoque > 0) {
@@ -63,29 +71,37 @@ public class ItemDigital {
         }
     }
 
+
     public String getNome() {
         return nome;
     }
+
 
     public double getValor() {
         return valor;
     }
 
+
     public int getEstoque() {
         return estoque;
     }
+
 
     public boolean getDisponivel() {
         return disponivel;
     }
 
+
     public boolean getExclusivo() {
         return exclusivo;
     }
 
+
     public void setExclusivo(boolean exclusivo) {
         this.exclusivo = exclusivo;
     }
+
+
 
 
     public boolean getJaComprado() {
@@ -93,11 +109,16 @@ public class ItemDigital {
     }
 
 
+
+
     public void setJaComprado(boolean jaComprado) {
         this.jaComprado = jaComprado;
     }
 
-    
 
-    
+   
+
+
+   
 }
+
