@@ -9,8 +9,16 @@ public class AviaoCarga extends Aeronave{
         this.tipoCarga = tipoCarga;
     }
 
+    public double getCapacidadeCargaToneladas() {
+        return capacidadeCargaToneladas;
+    }
+
+    public String getTipoCarga() {
+        return tipoCarga;
+    }
+
     public void exibirDadosCarga(){
-        exibirDados();
+        super.exibirDados();
         System.out.println("Capacidade Carga Toneladas: " + capacidadeCargaToneladas);
         System.out.println("Tipo Carga: " + tipoCarga);
     }
