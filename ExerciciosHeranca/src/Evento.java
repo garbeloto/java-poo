@@ -6,11 +6,11 @@ public class Evento {
     private int inscritos;
 
     public Evento(String nome, String data, double valorIngresso, int capacidadeMaxima, int inscritos) {
-        this.nome = nome;
-        this.data = data;
-        this.valorIngresso = valorIngresso;
-        this.capacidadeMaxima = capacidadeMaxima;
-        this.inscritos = inscritos;
+        setNome(nome);
+        setData(data);
+        setValorIngresso(valorIngresso);
+        setCapacidadeMaxima(capacidadeMaxima);
+        setInscritos(inscritos);
     }
 
     public void setNome(String nome) {
@@ -38,7 +38,7 @@ public class Evento {
     }
 
     public void setCapacidadeMaxima(int capacidadeMaxima) {
-        if (capacidadeMaxima >= 0) {
+        if (capacidadeMaxima < 0) {
             System.out.println("A capacidade máxima deve ser maior que zero.");
         } else {
             this.capacidadeMaxima = capacidadeMaxima;
@@ -47,16 +47,52 @@ public class Evento {
 
     public void setInscritos(int inscritos) {
         if (inscritos < 0) {
-            System.out.println("A quantidade de não pode ser negativa.");
-        }
-        if (inscritos > capacidadeMaxima) {
-            System.out.println("A quantidade de não pode ser maior que a capacidade máxima.");
+            System.out.println("A quantidade de ingressos não pode ser negativa.");
+        } else if (inscritos > capacidadeMaxima) {
+            System.out.println("A quantidade de ingressos não pode ser maior que a capacidade máxima.");
         } else {
             this.inscritos = inscritos;
         }
     }
 
+    public boolean inscreverParticipante(int inscrever){
+        if (inscritos < capacidadeMaxima) {
+            inscritos++;
+            return true;
+        } else {
+            return false;
+        }
+    }
 
+    public void exibirDadosEvento(){
+        System.out.println("Nome: " + nome);
+        System.out.println("Data: " + data);
+        System.out.println("Valor do ingresso: " + valorIngresso);
+        System.out.println("Capacidade Máxima: " + capacidadeMaxima);
+        System.out.println("Inscritos: " + inscritos);
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public double getValorIngresso() {
+        return valorIngresso;
+    }
+
+    public int getCapacidadeMaxima() {
+        return capacidadeMaxima;
+    }
+
+    public int getInscritos() {
+        return inscritos;
+    }
+
+    
 
     
 

@@ -1,6 +1,28 @@
 public class App {
     public static void main(String[] args) throws Exception {
+        //Exercicio 04:
+        
+
+
         //Exercicio 03:
+        /* EventoPresencial eventoPresencial = new EventoPresencial("evento 1", "20/10", 120, 400, 2, "shopping", false);
+        EventoOnline eventoOnline = new EventoOnline("Evento web", "20/12", 50, 200, 20, "meet", "link.123");
+
+        System.out.println("---informações evento presencial---");
+        eventoPresencial.exibirDadosEventoPresencial();
+        System.out.println();
+
+
+        System.out.println("---informações evento online---");
+        eventoOnline.exibirDadosEventoOnline();
+        System.out.println();
+
+        System.out.println("---inscrever participante---");
+        eventoPresencial.inscreverParticipante(1);
+
+        System.out.println("---informações evento presencial---");
+        eventoPresencial.exibirDadosEventoPresencial(); */
+
 
         //Exercicio 02:
         /* ProdutoDigital produtoDigital = new ProdutoDigital("A2232", "Item 20", 100, 6, "JPG");

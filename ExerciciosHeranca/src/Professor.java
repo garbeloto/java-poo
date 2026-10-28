@@ -11,18 +11,18 @@ public class Professor extends Pessoa{
     }
 
     public void setValorHora(double valorHora) {
-        if (valorHora >= 0) {
-            this.valorHora = valorHora;
-        } else {
+        if (valorHora < 0 || Double.isFinite(valorHora)) {
             System.out.println("Valor hora inválido.");
+        } else {
+            this.valorHora = valorHora;
         }
     }
 
     public void setHorasTrabalhadas(int horasTrabalhadas) {
-        if (horasTrabalhadas >= 0) {
-            this.horasTrabalhadas = horasTrabalhadas;
-        } else {
+        if (horasTrabalhadas < 0 || Double.isFinite(horasTrabalhadas)) {
             System.out.println("Horas trabalhadas inválidas.");
+        } else {
+            this.horasTrabalhadas = horasTrabalhadas;
         }
     }
 
