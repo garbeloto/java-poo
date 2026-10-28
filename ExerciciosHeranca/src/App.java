@@ -2,7 +2,6 @@ public class App {
     public static void main(String[] args) throws Exception {
         //Exercicio 03:
 
-
         //Exercicio 02:
         /* ProdutoDigital produtoDigital = new ProdutoDigital("A2232", "Item 20", 100, 6, "JPG");
 
