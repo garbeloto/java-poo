@@ -3,9 +3,10 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner scan = new Scanner(System.in);
+        int opcao= 0;
         
         do {
-            int opcao= 0;
+            
             System.out.println("\n--- MOTOR DE OPERAÇÕES FINANCEIRAS ---");
             System.out.println("1. Registrar Renda Fixa");
             System.out.println("2. Registrar Renda Variável");
@@ -19,25 +20,25 @@ public class App {
 
             if (opcao == 1) {
                 System.out.println("\n-- Renda Fixa --");
-                InvestimentoRendaFixa rf = new InvestimentoRendaFixa("RF01", 1000.0, 0.05);
+                InvestimentoRendaFixa rf = new InvestimentoRendaFixa(01, 1000.0, 0.05);
                 rf.exibirDadosOperacao();
                 System.out.printf("Rendimento: R$ %.2f\n", rf.calcularRendimento());
             } 
             else if (opcao == 2) {
                 System.out.println("\n-- Renda Variável --");
-                InvestimentoRendaVariavel rv = new InvestimentoRendaVariavel("RV01", 2000.0, 0.10, 1.5);
+                InvestimentoRendaVariavel rv = new InvestimentoRendaVariavel(02, 2000.0, 0.10, 1.5);
                 rv.exibirDadosOperacao();
                 System.out.printf("Rendimento: R$ %.2f\n", rv.calcularRendimento());
             } 
             else if (opcao == 3) {
                 System.out.println("\n-- Operação Internacional --");
-                OperacaoInternacional oi = new OperacaoInternacional("INT01", 500.0, 5.20);
+                OperacaoInternacional oi = new OperacaoInternacional(03, 500.0, 5.20);
                 oi.exibirDadosOperacao();
                 System.out.printf("Valor Convertido: R$ %.2f\n", oi.calcularValorConvertido());
             } 
             else if (opcao == 4) {
                 System.out.println("\n-- Investimento Internacional --");
-                InvestimentoInternacional ii = new InvestimentoInternacional("INV_INT01", 3000.0, 0.08, 5.20);
+                InvestimentoInternacional ii = new InvestimentoInternacional(04, 3000.0, 0.08, 5.20);
                 ii.exibirDadosOperacao();
                 System.out.printf("Rendimento: R$ %.2f\n", ii.calcularRendimento());
                 System.out.printf("Valor Convertido Inicial: R$ %.2f\n", ii.calcularValorConvertido());

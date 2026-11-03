@@ -1,7 +1,7 @@
-public class OperacaoInternacionai extends Operacao {
+public class OperacaoInternacional extends Operacao {
     private double taxaConversao;
 
-    public OperacaoInternacionai(int id, double valorInicial, double taxaConversao) {
+    public OperacaoInternacional(int id, double valorInicial, double taxaConversao) {
         super(id, valorInicial);
         setTaxaConversao(taxaConversao);
     }
@@ -14,7 +14,7 @@ public class OperacaoInternacionai extends Operacao {
         }
     }
 
-    public double calcularRendimentoRendaFixa(){
+    public double calcularValorConvertido(){
         return getValorInicial() * taxaConversao;
     }
     
