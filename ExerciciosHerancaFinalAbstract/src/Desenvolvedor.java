@@ -15,7 +15,6 @@ public class Desenvolvedor extends Funcionario {
             return getSalarioBase() * 1.15;
         }
     }
-    
 
 
 }

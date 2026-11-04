@@ -51,7 +51,12 @@ public abstract class Funcionario {
 
         System.out.println("Nome: " + nome);
         System.out.println("Matricula: " + matricula);
-        System.out.println("Slário base: " + salarioBase);
+        System.out.println("Salário base: " + salarioBase);
         System.out.println("Salario final: " + calculaBonusSalario());
+        System.out.println("Remuneração anual: " + calcularRemuneracaoAnual());
+    }
+
+    public double calcularRemuneracaoAnual(){
+        return calculaBonusSalario() * 12;
     }
 }
